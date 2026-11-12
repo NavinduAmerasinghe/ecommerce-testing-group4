@@ -1,0 +1,23 @@
+
+{
+  "all": true,
+  "include": [
+    "src/add.js",
+    "src/ceil.js",
+    "src/reduce.js",
+    "src/toInteger.js",
+    "src/isEmpty.js",
+    "src/filter.js",
+    "src/map.js",
+    "src/chunk.js",
+    "src/clamp.js",
+    "src/toNumber.js"
+  ],
+  "reporter": [
+    "text",
+    "html",
+    "lcov"
+  ],
+  "report-dir": "coverage",
+  "exclude-after-remap": true
+}
