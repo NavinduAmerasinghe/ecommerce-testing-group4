@@ -1,0 +1,25 @@
+
+# Dependencies
+node_modules/
+
+# Test coverage reports
+coverage/
+.nyc_output/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE settings
+.vscode/
+.idea/
