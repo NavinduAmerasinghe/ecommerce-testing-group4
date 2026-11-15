@@ -1,7 +1,7 @@
-
-# E-Commerce Testing - Group 4
+# E-Commerce Testing – Group 4 
 
 [![CI - Automated Testing](https://github.com/NavinduAmerasinghe/ecommerce-testing-group4/actions/workflows/ci.yml/badge.svg)](https://github.com/NavinduAmerasinghe/ecommerce-testing-group4/actions/workflows/ci.yml)
+
 [![Coverage Status](https://coveralls.io/repos/github/NavinduAmerasinghe/ecommerce-testing-group4/badge.svg?branch=main)](https://coveralls.io/github/NavinduAmerasinghe/ecommerce-testing-group4?branch=main)
 
 ## Project Overview
@@ -46,11 +46,17 @@ The HTML coverage report is generated in the `coverage/` directory.
 
 GitHub Actions automatically runs the test suites and generates a coverage report when changes are pushed to the `main` branch or when a pull request targets `main`.
 
-Coverage reports are uploaded to Coveralls.
+Coverage reports are uploaded to Coveralls, including when tests fail, so that coverage information remains available.
 
 ## Coverage Target
 
 The assignment targets at least 90% branch coverage for each of the ten selected utility functions.
+
+## Known Test Failures
+
+Some tests intentionally reveal defects in the original utility library implementation, particularly in `clamp()`, `chunk()`, and `filter()`.
+
+The original library source code has not been modified to make these tests pass. The failing tests are retained to document the identified defects.
 
 ## Repository Information
 
@@ -59,6 +65,10 @@ The assignment targets at least 90% branch coverage for each of the ten selected
 - Group: 4
 - Repository: [ecommerce-testing-group4](https://github.com/NavinduAmerasinghe/ecommerce-testing-group4)
 
+## Group Members
+
+- Navindu Amerasinghe
+
 ## Licence Notice
 
-The source code folder contains a separate license file that must **NOT** be removed or modified under any circumstances. Removing or modifying this file directly violates the terms and conditions of the software under testing.
+The source code folder contains a separate license file that must **not** be removed or modified under any circumstances. Removing or modifying this file directly violates the terms and conditions of the software under testing.
