@@ -10,8 +10,7 @@ describe('filter()', function () {
       expect(result).to.deep.equal([4, 5])
     })
 
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should return an empty array when no elements satisfy the predicate', function () {
+    it('should return an empty array when no elements satisfy the predicate', function () {
       const result = filter([1, 2, 3], value => value > 5)
 
       expect(result).to.deep.equal([])
@@ -23,8 +22,7 @@ describe('filter()', function () {
       expect(result).to.deep.equal([2, 4, 6])
     })
 
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should return an empty array for an empty input array', function () {
+    it('should return an empty array for an empty input array', function () {
       const result = filter([], value => value > 0)
 
       expect(result).to.deep.equal([])
@@ -97,15 +95,13 @@ describe('filter()', function () {
   })
 
   describe('Nullish input', function () {
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should return an empty array when input is null', function () {
+    it('should return an empty array when input is null', function () {
       const result = filter(null, () => true)
 
       expect(result).to.deep.equal([])
     })
 
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should return an empty array when input is undefined', function () {
+    it('should return an empty array when input is undefined', function () {
       const result = filter(undefined, () => true)
 
       expect(result).to.deep.equal([])

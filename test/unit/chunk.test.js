@@ -4,36 +4,31 @@ import chunk from '../../src/chunk.js'
 
 describe('chunk()', function () {
   describe('Normal chunking', function () {
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should split an array into chunks of the specified size', function () {
+    it('should split an array into chunks of the specified size', function () {
       const result = chunk([1, 2, 3, 4], 2)
 
       expect(result).to.deep.equal([[1, 2], [3, 4]])
     })
 
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should place remaining elements in the final chunk', function () {
+    it('should place remaining elements in the final chunk', function () {
       const result = chunk([1, 2, 3, 4, 5], 2)
 
       expect(result).to.deep.equal([[1, 2], [3, 4], [5]])
     })
 
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should use a default chunk size of one', function () {
+    it('should use a default chunk size of one', function () {
       const result = chunk([1, 2, 3])
 
       expect(result).to.deep.equal([[1], [2], [3]])
     })
 
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should return the entire array as one chunk when size is larger than the array length', function () {
+    it('should return the entire array as one chunk when size is larger than the array length', function () {
       const result = chunk([1, 2, 3], 5)
 
       expect(result).to.deep.equal([[1, 2, 3]])
     })
 
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should return one chunk when the chunk size is one', function () {
+    it('should return one chunk when the chunk size is one', function () {
       const result = chunk([1, 2, 3], 1)
 
       expect(result).to.deep.equal([[1], [2], [3]])
@@ -47,8 +42,7 @@ describe('chunk()', function () {
   })
 
   describe('Chunk size handling', function () {
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should convert a decimal chunk size to an integer', function () {
+    it('should convert a decimal chunk size to an integer', function () {
       const result = chunk([1, 2, 3, 4, 5], 2.8)
 
       expect(result).to.deep.equal([[1, 2], [3, 4], [5]])
@@ -72,8 +66,7 @@ describe('chunk()', function () {
       expect(result).to.deep.equal([])
     })
 
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should handle a numeric string as chunk size', function () {
+    it('should handle a numeric string as chunk size', function () {
       const result = chunk([1, 2, 3, 4], '2')
 
       expect(result).to.deep.equal([[1, 2], [3, 4]])
@@ -95,8 +88,7 @@ describe('chunk()', function () {
   })
 
   describe('Original array handling', function () {
-    // Temporarily skipped: exposes a known defect in the original library.
-    it.skip('should not modify the original array', function () {
+    it('should not modify the original array', function () {
       const original = [1, 2, 3, 4]
       const result = chunk(original, 2)
 
